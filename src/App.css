@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+background-color:#F59F00;
+}
+.header-top{
+  display:flex;
+  justify-content: center;
+  padding: 12px;
+  font-size: 21px;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color:#F59F00;
+  z-index: 9999;
+  transition: 1s;
+   
+}
+.header-bottom{
+  display:flex;
+  justify-content: center;
+  padding: 12px;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color:#f57600;
+  z-index: 9999;
+  box-shadow: 0.5px 0.5px 0.5px black;
+  transition: 1s;
+   
+}
+a{
+  padding-inline: 40px;
+  padding-top: 20px;
+  color:black;
+  text-decoration: none;
+  display:inline-block;
+  font-family: 'Bungee', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.logo-top{
+  height: 130px;
+  width:130px;
+  transform: translate(-250px,-10px);
+  transition: 1s;
+}
+.logo-bottom{
+  height: 100px;
+  width:100px;
+  transform: translate(-250px,-10px);
+  transition: 1s;
+}
+ a:hover{
+  text-decoration: underline;
+  
+ }
+ .photo{
+  width: 550px;
+  height: 550px;
+  transform: translate(75px,150px);
+  margin-left :20px;
+  border-radius: 10px;
+  border:solid black
+ }
+ .slides{
+  display: flex;
+  transform: translate(150px,150px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+ }
+  
+ .dots{
+  color:black;
+  transform: translate(-660px,470px);
+  font-size: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+ }
+ .dots :hover{
+  color:white
+
+ }
+ .photo4 {
+  width: 400px;
+  height: 600px;
+  transform: translate(200px,0px);
+ }
+ button{
+  height: 50px;
+  background:none;
+  font-size: 20px;
+  font-family: 'Fredoka', sans-serif;
+  border:none;
+  
+ }
+ .arrowLeft{
+  transform: translate(80px,250px);
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+ }
+ .arrowRight{
+  transform: translate(-310px,250px);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+ }
+ button:hover{
+  background-color: #ff1919;
+ }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(75px); 
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(75px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(75px);
+  }
+}
+
+
+
+.slide-right {
+  animation: slideInFromRight 0.6s ease forwards;
+  
+}
+
+.slide-left {
+  animation: slideInFromLeft 0.6s ease forwards;
+  
+}
+
+.slide-center {
+  animation: slideInFromCenter 0.6s ease forwards;
+  
+}
+.Apropos{
+  font-family: 'Luckiest Guy', cursive;
+
+  text-transform: uppercase;
+  width:800px;
+  transform: translate(600px,50px);
+  font-size: 30px;
+  text-align: center;
+}
+.nosProduits{
+  display: grid;
+  transform: translate(0px,-300px);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+h1{
+  transform: translate(665px,120px);
+  font-family: 'Fredoka', sans-serif;
+  text-decoration: underline;
+}
+.product-1{
+  opacity: 0.3;
+  height: 200px;
+  width: 200px;
+  transform: translate(50px,500px);
+  cursor: pointer;
+  filter:drop-shadow( 5px 5px 5px grey);
+}
+.product-5{
+  opacity: 0.3;
+  height: 200px;
+  width: 200px;
+  transform: translate(50px,500px);
+  cursor: pointer;
+  filter:drop-shadow( 5px 5px 5px grey);
+}
+.product-2{
+  opacity: 0.7;
+  height: 200px;
+  width: 200px;
+  transform: translate(50px,500px);
+  cursor: pointer;
+  filter:drop-shadow( 5px 5px 5px grey);
+}
+.product-4{
+  opacity: 0.6;
+  height: 200px;
+  width: 200px;
+  transform: translate(50px,500px);
+  cursor: pointer;
+  filter:drop-shadow( 5px 5px 5px grey);
+}
+.product-3{
+  height: 250px;
+  width: 250px;
+  transform: translate(50px,480px);
+  cursor: pointer;
+  filter:drop-shadow( 5px 5px 5px grey);
+}
+#nosProduits{
+  transform: translate(0px,200px);
+}
+.Apropos img{
+  height: 250px;
+  width: 250px;
+  transform: translate(-800px,280px);
+  animation: shake 0.5s infinite;
+  display:inline-block;
+}
+@keyframes shake {
+  0%   { transform:translate(-750px,280px) rotate(0deg); }
+  25%  { transform:translate(-750px,280px) rotate(7deg); }
+  50%  { transform:translate(-750px,280px) rotate(-7deg); }
+  75%  { transform:translate(-750px,280px) rotate(7deg); }
+  100% { transform:translate(-750px,280px) rotate(0deg); }
+}
+.footer{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  transform: translate(0px,600px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#logo{
+  width: 110px;
+  height: 110px;
+  transform: translate(730px,0px);
+}
+.tiktok{
+  transform: translate(570px,50px);
+}
+.instagram{
+  transform: translate(580px,50px);
+}
+.section {
+  
+display: inline-block;
+padding-inline: 70px;
+font-size: 20px;
+}
+.contactez{
+  transform: translate(-700px,200px);
+  color:white;
+  font-family:monospace
+}
+.politique{
+  transform: translate(-500px,200px);
+  color:white;
+  font-family:monospace
+}
+.conditions{
+  transform: translate(200px,160px);
+  color:white;
+  font-family:monospace
+}
+
